@@ -11,7 +11,7 @@ const getAllMusic = (req, res) => {
 };
 const getMusicById = (req, res) => {
     const musicId = req.params.id;
-    //FindOne retorna um unico documento
+    
     music.findOne({ _id: musicId }, function (err, musicFound) {
         if (err) {
             res.status(500).send({ message: err.message })
