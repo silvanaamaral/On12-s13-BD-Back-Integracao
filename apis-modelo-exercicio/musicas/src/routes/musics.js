@@ -1,6 +1,6 @@
 const express = require("express")
 const router = express.Router()
-const controller = require("../controllers/musicsController")
+
 
 // post - criacao
 router.post("/", controller.createMusic)
